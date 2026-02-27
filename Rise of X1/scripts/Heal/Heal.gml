@@ -1,3 +1,3 @@
-function Heal(){
-
+function Heal(amount){
+hp += amount
 }

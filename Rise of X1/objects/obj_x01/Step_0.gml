@@ -32,7 +32,19 @@ v_speed = clamp(v_speed, -move_speed, move_speed);
 //###########
 
 //Face Cursor
-image_angle = point_direction(x, y, mouse_x, mouse_y);
+dir = point_direction(x,y, mouse_x, mouse_y)
+
+//Prevents Character from flipping upside down when looking behind
+if(dir > 90 && dir <270){
+	// face left when looking behind
+	image_xscale = -1
+	image_angle = dir - 180
+}
+else{
+	// face right
+	image_xscale = 1 
+	image_angle = dir
+}
 
 //###########
 //Wall Colisions
