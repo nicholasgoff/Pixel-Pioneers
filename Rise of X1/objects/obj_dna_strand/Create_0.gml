@@ -1,0 +1,1 @@
+type = "none"; // This gets overwritten by the enemy's Step Event
