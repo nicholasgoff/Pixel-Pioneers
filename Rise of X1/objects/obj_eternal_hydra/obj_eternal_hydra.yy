@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ink_orb",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_x01","path":"objects/obj_x01/obj_x01.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_eternal_hydra",
+  "eventList":[],
   "managed":true,
-  "name":"obj_ink_orb",
+  "name":"obj_eternal_hydra",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ink_orb",
-    "path":"sprites/spr_ink_orb/spr_ink_orb.yy",
+    "name":"spr_eternal_hydra",
+    "path":"sprites/spr_eternal_hydra/spr_eternal_hydra.yy",
   },
   "spriteMaskId":null,
   "visible":true,

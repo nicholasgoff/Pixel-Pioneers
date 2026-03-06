@@ -1,13 +1,10 @@
-//Move the enemy 
-h_speed = dir * move_speed; 
-
-//Wall Collision
-if (place_meeting(x + h_speed, y, obj_wall)) {
-    // If we hit a wall, flip direction!
-    dir *= -1; 
+// ONLY handle death in the parent
+if (hp <= 0) {
+    var _dna = instance_create_layer(x, y, "Instances", obj_dna_strand);
+    
+    // Check which child this is to set DNA type
+    if (object_index == obj_abyssal_dart) _dna.type = "dart";
+    if (object_index == obj_ink_witch) _dna.type = "witch";
+    
+    instance_destroy();
 }
-
-x += h_speed;
-
-//Face direction of travel
-image_xscale = dir;
