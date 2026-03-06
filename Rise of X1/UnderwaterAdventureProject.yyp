@@ -36,11 +36,13 @@
   "name":"UnderwaterAdventureProject",
   "resources":[
     {"id":{"name":"obj_abyssalDart","path":"objects/obj_abyssalDart/obj_abyssalDart.yy",},},
-    {"id":{"name":"obj_dnaStrand","path":"objects/obj_dnaStrand/obj_dnaStrand.yy",},},
+    {"id":{"name":"obj_dna_strand","path":"objects/obj_dna_strand/obj_dna_strand.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_eternalHydra","path":"objects/obj_eternalHydra/obj_eternalHydra.yy",},},
+    {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
     {"id":{"name":"obj_inkWitch","path":"objects/obj_inkWitch/obj_inkWitch.yy",},},
     {"id":{"name":"obj_mantisReaper","path":"objects/obj_mantisReaper/obj_mantisReaper.yy",},},
+    {"id":{"name":"obj_melee_slash","path":"objects/obj_melee_slash/obj_melee_slash.yy",},},
     {"id":{"name":"obj_parasiticMote","path":"objects/obj_parasiticMote/obj_parasiticMote.yy",},},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},},
     {"id":{"name":"obj_trenchCracker","path":"objects/obj_trenchCracker/obj_trenchCracker.yy",},},
@@ -69,10 +71,10 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
+    {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
     {"roomId":{"name":"Level5_Kraken","path":"rooms/Level5_Kraken/Level5_Kraken.yy",},},
-    {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

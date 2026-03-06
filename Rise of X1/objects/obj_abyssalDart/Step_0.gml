@@ -1,11 +1,11 @@
-event_inherited()
-
-if (distance_to_object(obj_x01) < 150) {
-    // Special: Increased speed when close to player
-    move_speed = 6; 
-    // Point toward player
-    direction = point_direction(x, y, obj_x01.x, obj_x01.y);
+// Move toward X-01 if he's in the room
+if (instance_exists(obj_x01)) {
+    var _dir = point_direction(x, y, obj_x01.x, obj_x01.y);
+    
+    // Smoothly turn toward player
+    direction = _dir;
     speed = move_speed;
-} else {
-    move_speed = 2; // Return to normal speed
+    
+    // Point the "needle" at the player
+    image_angle = direction;
 }

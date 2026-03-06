@@ -1,4 +1,3 @@
-move_speed = 2; 
-h_speed = move_speed; 
-v_speed = 0; 
-dir = 1;
+hp = 3;               // Most basic enemies die in 3 hits
+move_speed = 2;       // Default speed
+flash = 0;            // Used for a "hit" animation

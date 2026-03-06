@@ -1,84 +1,52 @@
-//###########
-//Movement
-//###########
+// 1. INPUTS
 var _key_right = keyboard_check(ord("D"));
 var _key_left = keyboard_check(ord("A"));
 var _key_up = keyboard_check(ord("W"));
 var _key_down = keyboard_check(ord("S"));
 
-//Direction
-var _move_h = _key_right - _key_left;
-var _move_v = _key_down - _key_up;
+// 2. MOVEMENT
+var _h_move = _key_right - _key_left;
+var _v_move = _key_down - _key_up;
 
-//Apply acceleration and friction
-if (_move_h != 0) {
-	h_speed += _move_h * accel;
-} else {
-	h_speed = lerp(h_speed, 0, friction_power);
-}
+h_speed += _h_move * accel;
+v_speed += _v_move * accel;
 
-if (_move_v != 0) {
-	v_speed += _move_v * accel;
-} else {
-	v_speed = lerp(v_speed, 0, friction_power);
-}
+// Apply Friction
+if (_h_move == 0) h_speed = lerp(h_speed, 0, friction_amount);
+if (_v_move == 0) v_speed = lerp(v_speed, 0, friction_amount);
 
-//Cap speed
 h_speed = clamp(h_speed, -move_speed, move_speed);
 v_speed = clamp(v_speed, -move_speed, move_speed);
 
-//###########
-//Aiming
-//###########
-
-//Face Cursor
-dir = point_direction(x,y, mouse_x, mouse_y)
-
-//Prevents Character from flipping upside down when looking behind
-if(dir > 90 && dir <270){
-	// face left when looking behind
-	image_xscale = -1
-	image_angle = dir - 180
-}
-else{
-	// face right
-	image_xscale = 1 
-	image_angle = dir
-}
-
-//###########
-//Wall Colisions
-//###########
-
-//Horizontal
-if (place_meeting(x + h_speed, y, obj_wall)) {
-	while (!place_meeting(x + sign(h_speed), y, obj_wall)) {
-		x += sign(h_speed);
-	}
-	h_speed = 0;
-} 
 x += h_speed;
-
-//Vertical
-if (place_meeting(x, y + v_speed, obj_wall)) {
-	while (!place_meeting(x, y + sign(v_speed), obj_wall)) {
-		y += sign(v_speed);
-	}
-	v_speed = 0;
-}
 y += v_speed;
 
+// 3. AIMING
+image_angle = point_direction(x, y, mouse_x, mouse_y);
 
-//###########
-//Level Clear Check
-//###########
+// 4. CHECK FOR NEXT LEVEL
+/*
+if (instance_number(obj_enemy_parent) <= 0) {
+    if (room_exists(room_next(room))) room_goto_next();
+    else room_goto(rm_win);
+}
+*/ //uncheck when closer to finishing game
 
-//if no enemies remaining, go to next level(room)
-//if (instance_number(obj_enemy_parent) <= 0 ) {
-//	room_goto_next();
-//}
+// --- RANGED ATTACK (Left Click) ---
+if (mouse_check_button(mb_left) && can_attack) {
+    var _bullet = instance_create_layer(x, y, "Instances", obj_projectile);
+    _bullet.direction = image_angle;
+    _bullet.speed = 10;
+    _bullet.image_angle = image_angle;
+    
+    can_attack = false;
+    alarm[0] = ranged_delay; // Reset timer
+}
 
-
-//Bounds
-x = clamp(x, sprite_width/2, room_width-sprite_width/2)
-y = clamp(y, sprite_height/2, room_height-sprite_height/2)
+// --- MELEE ATTACK (Right Click or Space) ---
+// Since Left Click is for Ranged/Upgrades, let's use Right Click for Melee
+if (mouse_check_button_pressed(mb_right) && can_melee) {
+    instance_create_layer(x, y, "Instances", obj_melee_slash);
+    can_melee = false;
+    alarm[1] = melee_delay;
+}

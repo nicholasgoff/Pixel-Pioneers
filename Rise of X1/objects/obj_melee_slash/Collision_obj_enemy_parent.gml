@@ -1,0 +1,1 @@
+instance_destroy(other) //update so it takes a few hits
