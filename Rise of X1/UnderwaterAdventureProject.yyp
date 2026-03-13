@@ -65,6 +65,7 @@
     {"id":{"name":"spr_ink_witch","path":"sprites/spr_ink_witch/spr_ink_witch.yy",},},
     {"id":{"name":"spr_mantis_reaper","path":"sprites/spr_mantis_reaper/spr_mantis_reaper.yy",},},
     {"id":{"name":"spr_marker","path":"sprites/spr_marker/spr_marker.yy",},},
+    {"id":{"name":"spr_melee_slash","path":"sprites/spr_melee_slash/spr_melee_slash.yy",},},
     {"id":{"name":"spr_parasitic_mote","path":"sprites/spr_parasitic_mote/spr_parasitic_mote.yy",},},
     {"id":{"name":"spr_projectile","path":"sprites/spr_projectile/spr_projectile.yy",},},
     {"id":{"name":"spr_tileset","path":"sprites/spr_tileset/spr_tileset.yy",},},

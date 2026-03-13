@@ -1,3 +1,7 @@
-event_inherited();    // Pull variables from parent
-move_speed = 5;       // Darts are fast!
-
+event_inherited(); // Gets hp, flash, etc.
+state = "idle";
+dash_speed = 12;
+normal_speed = 2;
+cooldown_timer = 0;
+target_x = 0;
+target_y = 0;

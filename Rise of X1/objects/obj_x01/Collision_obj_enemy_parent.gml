@@ -14,3 +14,10 @@ if (hp <= 0) {
 var _dir = point_direction(other.x, other.y, x, y);
 h_speed = lengthdir_x(10, _dir);
 v_speed = lengthdir_y(10, _dir);
+
+//
+obj_game_manager.hp_current -= 1;
+
+if (obj_game_manager.hp_current <= 0) {
+    room_restart(); // Simple game over for now
+}

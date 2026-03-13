@@ -1,3 +1,9 @@
+// --- Health Variables ---
+hp_max = 100;
+hp_current = 100;
+player_lives = 1; // Start with one life
+max_lives = 2;    // Maximum capacity
+
 // DNA Progress
 dna_dart = 0;
 dna_crab = 0;
@@ -5,6 +11,8 @@ dna_witch = 0;
 dna_mantis = 0;
 dna_mote = 0;
 dna_hydra = 0;
+
+dna_required = 3
 
 // Upgrades Unlocked
 has_dash = false;       // From Dart

@@ -5,6 +5,8 @@ move_speed = 4; // Base speed
 accel = 0.5;    // How fast we speed up
 friction_amount = 0.2; // How fast we slow down
 
+can_be_hit = true;
+
 // DNA Upgrade Tracker 
 
 //Abyssal Dart
@@ -20,7 +22,6 @@ has_hardened_shell = false;
 //----------
 
 //Stats
-// --- Add these to your existing Create Event ---
 hp = 100;
 max_hp = 100;
 extra_life = 0
