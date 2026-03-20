@@ -4,3 +4,4 @@ state = "stalk";
 move_speed = 3.5;   // Faster than the player's base speed
 lunge_speed = 12;
 retreat_timer = 0;
+dna_type = "mantis";

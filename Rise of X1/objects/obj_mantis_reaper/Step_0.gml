@@ -21,22 +21,40 @@ switch (state) {
     break;
 
     case "lunge":
-        // Rapid dash forward
-        speed = lunge_speed;
-        // If he gets close enough or travels too far, go to retreat
-        if (distance_to_object(obj_x01) < 10) state = "retreat";
-        if (speed > 0) speed -= 0.2; // Natural deceleration
-	
+        if (instance_exists(obj_x01)) {
+            var _dir = point_direction(x, y, obj_x01.x, obj_x01.y);
+            image_angle = _dir;
+
+            x += lengthdir_x(lunge_speed, _dir);
+            y += lengthdir_y(lunge_speed, _dir);
+
+            x = clamp(x, 0, room_width);
+            y = clamp(y, 0, room_height);
+
+            if (distance_to_object(obj_x01) < 5) state = "retreat";
+        }
     break;
 
     case "retreat":
         // Back away quickly after an attack
         if (instance_exists(obj_x01)) {
             var _dir = point_direction(obj_x01.x, obj_x01.y, x, y);
-            direction = _dir;
-            speed = 5;
+            image_angle = _dir;
+
+            x += lengthdir_x(5, _dir);
+            y += lengthdir_y(5, _dir);
+
+            x = clamp(x, 0, room_width);
+            y = clamp(y, 0, room_height);
+
             retreat_timer++;
-            if (retreat_timer > 60) { // Retreat for 1 second
+
+            if (x <= 0 || x >= room_width || y <= 0 || y >= room_height) {
+                state = "stalk";
+                retreat_timer = 0;
+            }
+
+            if (retreat_timer > 60) {
                 state = "stalk";
                 retreat_timer = 0;
             }

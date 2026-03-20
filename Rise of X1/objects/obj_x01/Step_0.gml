@@ -22,7 +22,21 @@ x += h_speed;
 y += v_speed;
 
 // 3. AIMING
-image_angle = point_direction(x, y, mouse_x, mouse_y);
+aim_dir = point_direction(x, y, mouse_x, mouse_y);
+
+// Rotate normally for 180 degrees, then flip when aiming behind
+if (aim_dir > 90 && aim_dir < 270)
+{
+    image_xscale = -1;
+    image_angle = aim_dir - 180;
+}
+else
+{
+    image_xscale = 1;
+    image_angle = aim_dir;
+}
+
+
 
 // 4. CHECK FOR NEXT LEVEL
 /*
@@ -35,9 +49,9 @@ if (instance_number(obj_enemy_parent) <= 0) {
 // --- RANGED ATTACK (Left Click) ---
 if (mouse_check_button(mb_left) && can_attack) {
     var _bullet = instance_create_layer(x, y, "Instances", obj_projectile);
-    _bullet.direction = image_angle;
+    _bullet.direction = aim_dir;
     _bullet.speed = 10;
-    _bullet.image_angle = image_angle;
+    _bullet.image_angle = aim_dir;
     
     can_attack = false;
     alarm[0] = ranged_delay; // Reset timer
@@ -46,7 +60,8 @@ if (mouse_check_button(mb_left) && can_attack) {
 // --- MELEE ATTACK (Right Click or Space) ---
 // Since Left Click is for Ranged/Upgrades, let's use Right Click for Melee
 if (mouse_check_button_pressed(mb_right) && can_melee) {
-    instance_create_layer(x, y, "Instances", obj_melee_slash);
+    var _slash = instance_create_layer(x, y, "Instances", obj_melee_slash);
+	_slash.image_angle = aim_dir
     can_melee = false;
     alarm[1] = melee_delay;
 }

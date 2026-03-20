@@ -11,10 +11,12 @@ can_be_hit = true;
 
 //Abyssal Dart
 dart_dna_count = 0;
+dart_stage = 0
 has_burst_ability = false;
 
 //Trench Cracker
 cracker_dna_count = 0;
+cracker_stage = 0
 has_hardened_shell = false;
 
 //Add other enemies
@@ -28,4 +30,4 @@ extra_life = 0
 can_attack = true;     // Timer for ranged
 can_melee = true;      // Timer for melee
 ranged_delay = 20;     // Frames between shots
-melee_delay = 30;      // Frames between swings
+melee_delay = 30;  // Frames between swings
