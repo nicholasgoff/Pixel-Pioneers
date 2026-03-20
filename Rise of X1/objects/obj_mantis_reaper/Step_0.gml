@@ -1,5 +1,9 @@
 event_inherited();
 
+// Bound to screen
+x = clamp(x, 0, room_width);
+y = clamp(y, 0, room_height);
+
 switch (state) {
     case "stalk":
         if (instance_exists(obj_x01)) {
@@ -20,21 +24,27 @@ switch (state) {
         }
     break;
 
+    // Rapid dash forward
     case "lunge":
-        // Rapid dash forward
+		if (instance_exists(obj_x01)) {
+			direction = point_direction(x, y, obj_x01.x, obj_x01.y);
+    }
+	
         speed = lunge_speed;
+		
         // If he gets close enough or travels too far, go to retreat
         if (distance_to_object(obj_x01) < 10) state = "retreat";
-        if (speed > 0) speed -= 0.2; // Natural deceleration
+        if (speed > 0) speed -= 0.2; // Deceleration
 	
     break;
 
+    // Back away quickly after an attack
     case "retreat":
-        // Back away quickly after an attack
         if (instance_exists(obj_x01)) {
             var _dir = point_direction(obj_x01.x, obj_x01.y, x, y);
             direction = _dir;
             speed = 5;
+			
             retreat_timer++;
             if (retreat_timer > 60) { // Retreat for 1 second
                 state = "stalk";

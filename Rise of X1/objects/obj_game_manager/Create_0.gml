@@ -1,9 +1,3 @@
-// --- Health Variables ---
-hp_max = 100;
-hp_current = 100;
-player_lives = 1; // Start with one life
-max_lives = 2;    // Maximum capacity
-
 // DNA Progress
 dna_dart = 0;
 dna_crab = 0;
@@ -20,4 +14,4 @@ extra_health = 0;       // From Crab
 range_boost = 0;        // From Witch
 attack_speed = 1;       // From Mantis
 vision_radius = 300;    // From Mote
-lives_count = 3;        // Base lives
+player_lives = 3;        // Base lives

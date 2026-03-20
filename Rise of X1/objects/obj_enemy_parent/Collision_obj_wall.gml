@@ -1,2 +1,6 @@
-hspeed *= -1
-image_xscale *= -1
+x = xprevious;
+y = yprevious;
+
+speed = 0;
+h_speed = 0;
+v_speed = 0;

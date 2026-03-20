@@ -3,7 +3,7 @@ event_inherited(); // Keep any parent logic
 if (instance_exists(obj_x01)) {
     var _dist = distance_to_object(obj_x01);
     
-    // 1. Movement: Stay away if too close, approach if too far
+    // Stay away if too close, approach if too far
     if (_dist < 200) {
         direction = point_direction(obj_x01.x, obj_x01.y, x, y); // Run away
     } else if (_dist > 400) {

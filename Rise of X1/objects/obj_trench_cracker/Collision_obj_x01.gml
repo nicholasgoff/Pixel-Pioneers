@@ -1,5 +1,5 @@
 if (obj_x01.can_be_hit) {
-    obj_game_manager.hp_current -= 20; // Heavy damage (2 full hearts in a 100hp system)
+    obj_x01.hp -= 60;
     
     // Massive Knockback
     var _dir = point_direction(x, y, obj_x01.x, obj_x01.y);

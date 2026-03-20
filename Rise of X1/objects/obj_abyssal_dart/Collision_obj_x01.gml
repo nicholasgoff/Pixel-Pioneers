@@ -1,14 +1,21 @@
 if (state == "dashing") {
     if (obj_x01.can_be_hit) {
-        obj_game_manager.hp_current -= 1; // 1 HP damage (balance as needed)
+		// Push player back
+		var _dir = point_direction(x, y, obj_x01.x, obj_x01.y);
+		obj_x01.h_speed = lengthdir_x(10, _dir);
+		obj_x01.v_speed = lengthdir_y(10, _dir);
+		
+	    obj_x01.hp -= 20; // Placeholder health deduction
         
-        // Safety for player
-        obj_x01.can_be_hit = false;
-        obj_x01.alarm[3] = 60; 
+	    // Safety for player
+	    obj_x01.can_be_hit = false;
+	    obj_x01.alarm[3] = 60; 
         
-        // Bounce the Dart back and make him tired
-        state = "resting";
-        cooldown_timer = 120;
-        speed = -2; // Slight recoil
+	    // Bounce the Dart back and make him tired
+		direction = point_direction(obj_x01.x, obj_x01.y, x, y);
+		speed = 4;
+		
+	    state = "resting";
+	    cooldown_timer = 120;
     }
 }

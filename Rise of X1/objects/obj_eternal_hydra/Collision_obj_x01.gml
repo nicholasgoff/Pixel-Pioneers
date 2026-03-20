@@ -8,6 +8,6 @@ if (obj_game_manager.player_lives < obj_game_manager.max_lives) {
     instance_destroy(); 
 } else {
     // If lives are full, maybe just heal the player instead?
-    obj_game_manager.hp_current = obj_game_manager.hp_max;
+    obj_x01.hp = 100;
     instance_destroy();
 }

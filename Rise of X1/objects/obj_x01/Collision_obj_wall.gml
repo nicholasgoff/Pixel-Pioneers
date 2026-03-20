@@ -1,6 +1,6 @@
-// If we hit a block, move back to where we were before we hit it
+// Wall collision
 x = xprevious;
-y = yprevious;
-
 h_speed = 0;
+
+y = yprevious;
 v_speed = 0;

@@ -1,7 +1,8 @@
-event_inherited(); // Death check
+event_inherited();
 
 switch (state) {
     case "drift":
+	
         // Slowly move toward player if they are close
         if (instance_exists(obj_x01)) {
             if (distance_to_object(obj_x01) < 200) {
@@ -13,6 +14,7 @@ switch (state) {
     break;
 
     case "latched":
+	
         // Follow the player exactly
         if (instance_exists(obj_x01)) {
             x = obj_x01.x + attach_offset_x;
@@ -23,13 +25,16 @@ switch (state) {
             // Drain Health every 1 second (60 frames)
             drain_timer++;
             if (drain_timer >= 60) {
-                obj_game_manager.hp_current -= 1; // Slow drain
+                obj_x01.hp -= 1; // Slow drain
                 drain_timer = 0;
-                // Optional: Make the mote pulse red when it bites
+				
+                // Mote pulses red when it bites
                 image_blend = c_red;
+				
             } else {
                 image_blend = c_white;
             }
+			
         } else {
             state = "drift"; // Fall off if player dies
         }

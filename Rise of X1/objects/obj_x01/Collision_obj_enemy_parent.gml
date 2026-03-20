@@ -1,23 +1,19 @@
-// --- Collision with obj_enemy_parent ---
-hp -= 10; // Take 10 damage
+// Abyssal dart & Parasitic Mote handle own damage
+if (other.object_index == obj_abyssal_dart) exit;
+if (other.object_index == obj_parasitic_mote) exit;
 
-// Visual Feedback: Flash Red
-image_blend = c_red;
-alarm[2] = 5; // Reset color in 5 frames
 
-// Check for Death
-if (hp <= 0) {
-    room_goto(rm_lose); // Go to lose screen from your doc
-}
+// Take damage
+if (can_be_hit) {
+	hp -= 10;
+	
+	// Visual Feedback: Flash Red
+	image_blend = c_red;
+	alarm[2] = 5;
 
-// Knockback: Push X-01 away from the enemy
-var _dir = point_direction(other.x, other.y, x, y);
-h_speed = lengthdir_x(10, _dir);
-v_speed = lengthdir_y(10, _dir);
+	// Knockback: Push X-01 away from the enemy
+	var _dir = point_direction(other.x, other.y, x, y);
+	h_speed = lengthdir_x(10, _dir);
+	v_speed = lengthdir_y(10, _dir);
 
-//
-obj_game_manager.hp_current -= 1;
-
-if (obj_game_manager.hp_current <= 0) {
-    room_restart(); // Simple game over for now
 }

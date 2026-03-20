@@ -6,7 +6,7 @@ if (_angle_diff < 60) {
     hp -= 1; // Chip damage
     //audio_play_sound(snd_clink, 1, false); // Add a metallic sound
 } else {
-    hp -= 4; // Massive damage from the back/sides!
+    hp -= 4; // Massive damage from the back/sides
 }
 
 instance_destroy(other);

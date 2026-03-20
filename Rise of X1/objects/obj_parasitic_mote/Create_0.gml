@@ -1,4 +1,4 @@
-event_inherited(); // Gets HP from parent
+event_inherited();
 state = "drift";
 target = noone;
 drain_timer = 0;

@@ -1,4 +1,4 @@
-event_inherited(); // Handles death check
+event_inherited();
 
 switch (state) {
     case "idle":
@@ -17,13 +17,11 @@ switch (state) {
         if (instance_exists(obj_x01)) {
             image_angle = point_direction(x, y, obj_x01.x, obj_x01.y);
         }
+		
     break;
 
     case "dashing":
-        // Move fast in the direction he was pointed
-        speed = dash_speed;
-        // Stop dashing after a certain distance or time
-        if (alarm[2] <= 0) alarm[2] = 40; 
+		// Dash
     break;
 
     case "resting":

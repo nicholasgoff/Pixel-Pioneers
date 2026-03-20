@@ -1,6 +1,6 @@
-// 1. Serpentine movement logic
+// Create a gentle up/down sway
 timer += 0.05;
-var _wave = sin(timer) * 2; // Create a gentle up/down sway
+var _wave = sin(timer) * 2;
 
 if (!fleeing) {
     x += move_speed;
