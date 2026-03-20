@@ -31,11 +31,16 @@ v_speed = clamp(v_speed, -move_speed, move_speed);
 x += h_speed;
 y += v_speed;
 
-// TODO: Add respawn function to respawn player
 // Death logic
 if (hp <= 0) {
-    instance_destroy();
-    room_goto(rm_lose);
+	obj_game_manager.player_lives --;
+	if (obj_game_manager.player_lives < 0) room_goto(rm_lose);
+	
+    hp = 100;
+	speed = 0;
+	
+	x = spawn_x;
+	y = spawn_y;
 }
 
 aim_dir = point_direction(x, y, mouse_x, mouse_y);
