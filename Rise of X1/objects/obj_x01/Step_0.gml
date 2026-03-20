@@ -31,20 +31,28 @@ v_speed = clamp(v_speed, -move_speed, move_speed);
 x += h_speed;
 y += v_speed;
 
+// TODO: Add respawn function to respawn player
 // Death logic
 if (hp <= 0) {
     instance_destroy();
     room_goto(rm_lose);
 }
 
-// Aiming
-var _dir = point_direction(x, y, mouse_x, mouse_y);
+aim_dir = point_direction(x, y, mouse_x, mouse_y);
 
-if (_dir > 90 && _dir < 270) {
-	image_xscale = -1;
-} else {
-	image_xscale = 1;
+// Rotate normally for 180 degrees, then flip when aiming behind
+if (aim_dir > 90 && aim_dir < 270)
+{
+    image_xscale = -1;
+    image_angle = aim_dir - 180;
 }
+else
+{
+    image_xscale = 1;
+    image_angle = aim_dir;
+}
+
+
 
 // 4. CHECK FOR NEXT LEVEL
 /*
@@ -57,9 +65,9 @@ if (instance_number(obj_enemy_parent) <= 0) {
 // Ranged attack
 if (mouse_check_button(mb_left) && can_attack) {
     var _bullet = instance_create_layer(x, y, "Instances", obj_projectile);
-    _bullet.direction = _dir;
+    _bullet.direction = aim_dir;
     _bullet.speed = 10;
-    _bullet.image_angle = _dir;
+    _bullet.image_angle = aim_dir;
     
     can_attack = false;
     alarm[0] = ranged_delay;
@@ -67,7 +75,8 @@ if (mouse_check_button(mb_left) && can_attack) {
 
 // Melee
 if (mouse_check_button_pressed(mb_right) && can_melee) {
-    instance_create_layer(x, y, "Instances", obj_melee_slash);
+    var _slash = instance_create_layer(x, y, "Instances", obj_melee_slash);
+	_slash.image_angle = aim_dir
     can_melee = false;
     alarm[1] = melee_delay;
 }

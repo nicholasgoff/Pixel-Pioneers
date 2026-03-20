@@ -30,4 +30,21 @@ draw_set_color(c_white);
 var _dna_text = "DASH EVOLUTION: " + string(dna_dart) + " / " + string(dna_required);
 draw_text(_gui_w - _margin, _gui_h - _margin - 10, _dna_text);
 
+// Evolution message
+if (evolution_timer > 0)
+{
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_color(c_yellow);
+    draw_text(_gui_w / 2, 60, evolution_text);
+
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+}
+
 draw_set_halign(fa_left);
+draw_text(20, 20, "Mantis DNA: " + string(dna_mantis) + " / " + string(dna_required));
+
+// Reset alignment so it doesn't mess up other text later
+draw_set_halign(fa_left);
+

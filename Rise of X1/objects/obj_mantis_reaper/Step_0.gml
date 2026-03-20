@@ -46,7 +46,13 @@ switch (state) {
             speed = 5;
 			
             retreat_timer++;
-            if (retreat_timer > 60) { // Retreat for 1 second
+
+            if (x <= 0 || x >= room_width || y <= 0 || y >= room_height) {
+                state = "stalk";
+                retreat_timer = 0;
+            }
+
+            if (retreat_timer > 60) {
                 state = "stalk";
                 retreat_timer = 0;
             }
