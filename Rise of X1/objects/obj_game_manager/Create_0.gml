@@ -35,7 +35,7 @@ vision_radius = 300;	// From Mote
 pickup_radius = 100;
 
 regen_rate = 0			//From Hydra
-player_lives = 3;        // Base lives
+player_lives = 0;        // Base lives
 
 evolution_text = "";
 evolution_timer = 0;

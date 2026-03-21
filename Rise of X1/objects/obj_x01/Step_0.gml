@@ -119,3 +119,17 @@ if (hp < max_hp)
     hp += obj_game_manager.regen_rate;
     hp = min(hp, max_hp);
 }
+
+// Death logic
+if (hp <= 0) {
+	obj_game_manager.player_lives --;
+	if (obj_game_manager.player_lives < 0) {
+		room_goto(rm_lose);
+	}
+	
+    hp = 100;
+	speed = 0;
+	
+	x = spawn_x;
+	y = spawn_y;
+}

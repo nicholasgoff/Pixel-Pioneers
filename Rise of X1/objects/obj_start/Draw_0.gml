@@ -28,12 +28,13 @@ if (menu == "main") {
 // INSTRUCTIONS
 if (menu == "instructions") {
     draw_text(cx, cy - 100, "Instructions:");
-    draw_text(cx, cy, "- Move with WASD");
-	draw_text(cx, cy + 80, "- Shoot with left click & melee with right click");
-    draw_text(cx, cy + 160, "- Kill enemies to get DNA and evolve");
-	draw_text(cx, cy + 240, "- Clear all enemies to progress");
-	draw_text(cx, cy + 320, "- Defeat the kraken to win");
-	
+	draw_set_halign(fa_left);
+    draw_text(cx - 400, cy, "- Move with WASD");
+	draw_text(cx - 400, cy + 80, "- Shoot with left click & melee with right click");
+    draw_text(cx - 400, cy + 160, "- Kill enemies to get DNA and evolve");
+	draw_text(cx - 400, cy + 240, "- Clear all enemies to progress");
+	draw_text(cx - 400, cy + 320, "- Defeat the kraken to win");
+	draw_set_halign(fa_center);
 	
     
     if (point_in_rectangle(mouse_x, mouse_y, cx - 200, cy + 440, cx + 200, cy + 500)) {
@@ -43,7 +44,7 @@ if (menu == "instructions") {
 
 // CREDITS
 if (menu == "credits") {
-    draw_text(cx, cy - 100, "Credits");
+    draw_text(cx, cy - 100, "--- Credits ---");
     draw_text(cx, cy, "Pixel Pioneers:");
 	draw_text(cx, cy + 80, "Nick Goff - Producer");
     draw_text(cx, cy + 160, "Jamison Hill - Designer");
