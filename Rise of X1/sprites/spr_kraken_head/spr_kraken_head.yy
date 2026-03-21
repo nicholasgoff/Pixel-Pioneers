@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"kraken",
-    "path":"folders/Sprites/kraken.yy",
+    "path":"folders/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
