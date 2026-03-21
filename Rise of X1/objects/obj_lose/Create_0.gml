@@ -1,0 +1,1 @@
+instance_create_layer(100, -room_height + 1000, "Instances", obj_dead_x01);
