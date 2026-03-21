@@ -5,7 +5,15 @@ if (state == "dashing") {
 		obj_x01.h_speed = lengthdir_x(10, _dir);
 		obj_x01.v_speed = lengthdir_y(10, _dir);
 		
-	    obj_x01.hp -= 20; // Placeholder health deduction
+	     // Base damage
+        var dmg = 20;
+
+        // Trench Cracker upgrade reduces incoming damage
+        if (obj_game_manager.has_hardened_shell) {
+            dmg = 10;
+        }
+
+        obj_x01.hp -= dmg;
         
 	    // Safety for player
 	    obj_x01.can_be_hit = false;

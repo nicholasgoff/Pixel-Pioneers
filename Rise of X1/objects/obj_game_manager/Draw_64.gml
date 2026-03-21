@@ -42,8 +42,17 @@ if (evolution_timer > 0)
     draw_set_valign(fa_top);
 }
 
+
+var gui_w = display_get_gui_width();
+var gui_h = display_get_gui_height();
+var margin = 20;
+
+
+
+draw_set_color(c_white);
 draw_set_halign(fa_left);
-draw_text(20, 20, "Mantis DNA: " + string(dna_mantis) + " / " + string(dna_required));
+draw_set_valign(fa_top);
+
 
 // Reset alignment so it doesn't mess up other text later
 draw_set_halign(fa_left);
