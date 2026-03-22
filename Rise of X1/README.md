@@ -83,6 +83,15 @@ The core gameplay loop consists of:
 - **F3** – Clear all enemies in room
 - **F4** – Reset player position
 
+- **CTRL + 1** - Add Mantis DNA
+- **CTRL + 2** - Add Dart DNA
+- **CTRL + 3** - Add Crab DNA
+- **CTRL + 4** - Add Witch DNA
+- **CTRL + 5** - Add Mote DNA
+- **CTRL + 6** - Collect Eternal Hydras (extra life)
+
+- **B** - Skips time to Kraken Battle
+
 ---
 
 
