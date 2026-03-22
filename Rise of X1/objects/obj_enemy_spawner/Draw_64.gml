@@ -6,14 +6,7 @@ if (game_timer > 0) {
     var _time_string = string(_minutes) + ":" + ( _seconds < 10 ? "0" : "" ) + string(_seconds);
     
     draw_set_font(fnt_hud);
-<<<<<<< Updated upstream
-    draw_set_halign(fa_center);
-    draw_set_color(c_white);
-    draw_text(room_width / 2, 50, "KRAKEN ARRIVAL: " + _time_string);
-} else {
-    draw_set_color(c_red);
-    draw_text(room_width / 2, 50, "SURVIVE THE KRAKEN!");
-=======
+
     draw_set_halign(fa_right);
     draw_set_color(c_white);
     draw_text(display_get_gui_width() - 20, 20, "KRAKEN ARRIVAL: " + _time_string);
@@ -21,5 +14,5 @@ if (game_timer > 0) {
 	draw_set_halign(fa_right);
     draw_set_color(c_red);
     draw_text(display_get_gui_width() - 20, 20, "SURVIVE THE KRAKEN!");
->>>>>>> Stashed changes
+
 }

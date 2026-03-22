@@ -24,12 +24,12 @@ if (game_timer > 0) {
     }
 }
 
-<<<<<<< Updated upstream
+
 //Cheat code to drop timer
 if (keyboard_check_pressed(ord("B"))) {
 	game_timer = 0
 }
-=======
+
 if (game_timer = 10800 && !extra_life_spawned) {
 	extra_life_spawned = true
 	
@@ -72,4 +72,3 @@ if keyboard_check_pressed(ord("L")) {
 	instance_create_layer(_x2, _y2, "Instances", obj_eternal_hydra)
 }
 	
->>>>>>> Stashed changes
