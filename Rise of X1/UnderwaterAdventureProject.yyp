@@ -36,6 +36,7 @@
   "name":"UnderwaterAdventureProject",
   "resources":[
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
+    {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},},
     {"id":{"name":"obj_abyssal_dart","path":"objects/obj_abyssal_dart/obj_abyssal_dart.yy",},},
     {"id":{"name":"obj_dead_x01","path":"objects/obj_dead_x01/obj_dead_x01.yy",},},
