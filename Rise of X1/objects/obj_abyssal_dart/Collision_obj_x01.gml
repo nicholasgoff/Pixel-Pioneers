@@ -1,6 +1,3 @@
-// If god mode is on negate damage
-if (obj_x01.god_mode_is_active) exit 
-
 if (state == "dashing") {
     if (obj_x01.can_be_hit) {
 		// Push player back
@@ -15,8 +12,9 @@ if (state == "dashing") {
         if (obj_game_manager.has_hardened_shell) {
             dmg = 10;
         }
-
+	if (!obj_x01.god_mode_is_active){
         obj_x01.hp -= dmg;
+	}
         
 	    // Safety for player
 	    obj_x01.can_be_hit = false;

@@ -87,6 +87,7 @@ if (obj_game_manager.has_dash && can_dash && keyboard_check_pressed(vk_shift))
 
     can_dash = false;
     alarm[4] = obj_game_manager.dash_cooldown;
+	
 }
 
 // --- BURST ATTACK (E key) ---
@@ -111,6 +112,7 @@ if (obj_game_manager.has_burst_ability && can_burst && keyboard_check_pressed(or
 
     can_burst = false;
     alarm[5] = burst_cooldown;
+	burst_cd = burst_cooldown
 }
 
 // --- HEALTH REGEN ---
@@ -159,6 +161,16 @@ if (cheats_active) {
 	// God Mode
 	if (keyboard_check(vk_f4)){
     god_mode_is_active = !god_mode_is_active
+	
+	if (god_mode_is_active){
+		obj_game_manager.evolution_text = "GOD MODE ACTIVATED"
+		}
+	
+	else{
+		obj_game_manager.evolution_text = "GOD MODE DEACTIVATED"
+		}
+		
+		obj_game_manager.evolution_timer = 120
 	}
 	
 	

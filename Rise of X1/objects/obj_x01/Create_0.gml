@@ -18,6 +18,7 @@ dart_stage = 0
 can_burst = true;
 burst_cooldown = 600
 can_dash = true
+dash_cd = 0
 
 //Trench Cracker
 cracker_dna_count = 0;
