@@ -160,7 +160,7 @@ if (obj_game_manager.dna_mote >= mote_needed)
 
         case 3:
             obj_game_manager.camera_width += 150;
-			obj_game_manager.camera_height += 80;;
+			obj_game_manager.camera_height += 80;
             obj_game_manager.evolution_text = "EVOLUTION: EVEN BETTER VISION";
             break;
     }
