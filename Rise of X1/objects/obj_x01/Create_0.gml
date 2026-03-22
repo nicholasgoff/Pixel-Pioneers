@@ -40,3 +40,4 @@ ranged_delay = 20;     // Frames between shots
 melee_delay = 30;  // Frames between swings
 spawn_x = x
 spawn_y = y
+
