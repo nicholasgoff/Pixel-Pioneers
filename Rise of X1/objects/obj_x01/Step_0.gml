@@ -162,7 +162,6 @@ if (cheats_active) {
 	}
 	
 	
-	
 	// Add DNA from corresponding enemy
 	if (keyboard_check(vk_control) && keyboard_check_pressed(ord("1"))){
     obj_game_manager.dna_mantis += 5;
@@ -194,6 +193,6 @@ if (cheats_active) {
 	check_evolution()
 	}
 	
-	
+
 	
 }

@@ -89,6 +89,10 @@ The core gameplay loop consists of:
 - **CTRL + 4** - Add Witch DNA
 - **CTRL + 5** - Add Mote DNA
 - **CTRL + 6** - Collect Eternal Hydras (extra life)
+- **CTRL + 7** - Go to room start
+- **CTRL + 8** - Go to room main
+- **CTRL + 9** - Go to room win
+- **CTRL + 0** - Go to room lose
 
 - **B** - Skips time to Kraken Battle
 
