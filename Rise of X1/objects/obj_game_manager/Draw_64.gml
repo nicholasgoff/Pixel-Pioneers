@@ -54,6 +54,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 
+
 // Reset alignment so it doesn't mess up other text later
 draw_set_halign(fa_left);
 

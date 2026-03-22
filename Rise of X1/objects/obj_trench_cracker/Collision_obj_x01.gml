@@ -1,5 +1,7 @@
-if (obj_x01.can_be_hit) {
-    obj_x01.hp -= 60;
+
+
+if (obj_x01.can_be_hit && !obj_x01.god_mode_is_active) {
+    obj_x01.hp -= 40;
     
     // Massive Knockback
     var _dir = point_direction(x, y, obj_x01.x, obj_x01.y);

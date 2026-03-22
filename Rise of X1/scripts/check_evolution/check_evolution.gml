@@ -1,17 +1,4 @@
-// ====================
-// ADD DNA
-// ====================
-switch(other.type) {
-    case "dart":   obj_game_manager.dna_dart += 1; break;
-    case "crab":   obj_game_manager.dna_crab += 1; break;
-    case "witch":  obj_game_manager.dna_witch += 1; break;
-    case "mantis": obj_game_manager.dna_mantis += 1; break;
-    case "mote":   obj_game_manager.dna_mote += 1; break;
-    case "hydra":  obj_game_manager.dna_hydra += 1; break;
-}
-
-instance_destroy(other);
-
+function check_evolution(){
 // ====================
 // DART DNA
 // ====================
@@ -195,4 +182,5 @@ if (obj_game_manager.dna_hydra >= hydra_needed)
             break;
     }
     obj_game_manager.evolution_timer = 120;
+}
 }

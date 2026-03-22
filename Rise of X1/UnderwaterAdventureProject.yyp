@@ -81,6 +81,7 @@
     {"id":{"name":"rm_lose","path":"rooms/rm_lose/rm_lose.yy",},},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
+    {"id":{"name":"check_evolution","path":"scripts/check_evolution/check_evolution.yy",},},
     {"id":{"name":"Heal","path":"scripts/Heal/Heal.yy",},},
     {"id":{"name":"takeDamage","path":"scripts/takeDamage/takeDamage.yy",},},
     {"id":{"name":"spr_abyssal_dart","path":"sprites/spr_abyssal_dart/spr_abyssal_dart.yy",},},

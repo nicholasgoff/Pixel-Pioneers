@@ -1,3 +1,6 @@
+// If god mode is on negate damage
+if (god_mode_is_active) exit 
+
 if (state == "dashing") {
     if (obj_x01.can_be_hit) {
 		// Push player back

@@ -24,7 +24,7 @@ switch (state) {
             
             // Drain Health every 1 second (60 frames)
             drain_timer++;
-            if (drain_timer >= 60) {
+            if (drain_timer >= 60 && !obj_x01.god_mode_is_active) {
                 obj_x01.hp -= 1; // Slow drain
                 drain_timer = 0;
 				

@@ -40,8 +40,8 @@ if (!fleeing) {
 } else {
     var _dir = point_direction(obj_x01.x, obj_x01.y, x, y);
 
-    var _new_x = x + lengthdir_x(4, _dir);
-    var _new_y = y + lengthdir_y(4, _dir);
+    var _new_x = x + lengthdir_x(2.5, _dir);
+    var _new_y = y + lengthdir_y(2.5, _dir);
 
     if (!place_meeting(_new_x, y, obj_wall)) {
         x = _new_x;

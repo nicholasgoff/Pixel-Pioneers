@@ -1,3 +1,6 @@
+// Cheat Code variable
+cheats_active = false
+god_mode_is_active = false
 //Movement Physics
 h_speed = 0;
 v_speed = 0;

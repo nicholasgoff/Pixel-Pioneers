@@ -133,3 +133,67 @@ if (hp <= 0) {
 	x = spawn_x;
 	y = spawn_y;
 }
+
+// Cheat Codes
+if (keyboard_check_pressed(vk_f1)) {
+	cheats_active = true
+}
+
+if (cheats_active) {
+	// Heal to max health
+	if (keyboard_check_pressed(vk_f2)) { 
+		hp = max_hp
+		}
+	
+	// Add extra life
+	if (keyboard_check_pressed(vk_f3)){
+		obj_game_manager.player_lives += 1
+	}
+	
+	// Reset Cooldowns
+	if (keyboard_check_pressed(vk_f5)){
+		can_dash = true
+		can_burst = true
+	}
+	
+	// God Mode
+	if (keyboard_check(vk_f4)){
+    god_mode_is_active = !god_mode_is_active
+	}
+	
+	
+	
+	// Add DNA from corresponding enemy
+	if (keyboard_check(vk_control) && keyboard_check_pressed(ord("1"))){
+    obj_game_manager.dna_mantis += 5;
+	check_evolution()
+	}
+
+	if (keyboard_check(vk_control) && keyboard_check_pressed(ord("2"))){
+    obj_game_manager.dna_dart += 5;
+	check_evolution()
+	}
+
+	if (keyboard_check(vk_control) && keyboard_check_pressed(ord("3"))){
+    obj_game_manager.dna_crab += 5;
+	check_evolution()
+	}
+
+	if (keyboard_check(vk_control) && keyboard_check_pressed(ord("4"))){
+    obj_game_manager.dna_witch += 5;
+	check_evolution()
+	}
+
+	if (keyboard_check(vk_control) && keyboard_check_pressed(ord("5"))){
+    obj_game_manager.dna_mote += 5;
+	check_evolution()
+	}
+
+	if (keyboard_check(vk_control) && keyboard_check_pressed(ord("6"))){
+    obj_game_manager.dna_hydra += 5;
+	check_evolution()
+	}
+	
+	
+	
+}

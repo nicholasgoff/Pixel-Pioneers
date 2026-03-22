@@ -1,6 +1,10 @@
+// If god mode is on negate damage
+if (god_mode_is_active) exit 
+
 // Abyssal Dart & Parasitic Mote handle own damage
 if (other.object_index == obj_abyssal_dart) exit;
 if (other.object_index == obj_parasitic_mote) exit;
+if (other.object_index == obj_eternal_hydra) exit
 
 // Take damage
 if (can_be_hit) {
