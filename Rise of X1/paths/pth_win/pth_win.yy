@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_win",
+  "closed":true,
+  "kind":1,
+  "name":"pth_win",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":960.0,"y":512.0,},
+    {"speed":100.0,"x":960.0,"y":576.0,},
+    {"speed":100.0,"x":960.0,"y":608.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
