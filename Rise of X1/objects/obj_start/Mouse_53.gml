@@ -9,7 +9,7 @@ if (menu == "main") {
     
     // Start Game
     if (point_in_rectangle(mx, my, cx - 200, cy - 100, cx + 200, cy - 40)) {
-        room_goto(Level1);
+        room_goto(rm_main);
     }
 
     // Instructions

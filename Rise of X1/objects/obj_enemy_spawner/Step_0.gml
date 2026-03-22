@@ -24,7 +24,52 @@ if (game_timer > 0) {
     }
 }
 
+<<<<<<< Updated upstream
 //Cheat code to drop timer
 if (keyboard_check_pressed(ord("B"))) {
 	game_timer = 0
 }
+=======
+if (game_timer = 10800 && !extra_life_spawned) {
+	extra_life_spawned = true
+	
+	var _margin = 64
+	//spawn first extra life
+	var _x1 = irandom_range(_margin, room_width - _margin)
+	var _y1 = irandom_range(_margin, room_height - _margin)
+	instance_create_layer(_x1, _y1, "Instances", obj_eternal_hydra)
+	
+	//spawn second
+	var _x2, _y2
+	do {
+		_x2 = irandom_range(_margin, room_width - _margin)
+		_y2 = irandom_range(_margin, room_height - _margin) 
+	} until (point_distance(_x1, _y1, _x2, _y2) > 200)
+	
+	instance_create_layer(_x2, _y2, "Instances", obj_eternal_hydra)
+}
+
+//Cheat code to drop timer
+if (keyboard_check_pressed(ord("B"))) {
+	game_timer = 0
+}
+
+//Cheat code to spawn ectra life early
+if keyboard_check_pressed(ord("L")) {
+	var _margin = 64
+	//spawn first extra life
+	var _x1 = irandom_range(_margin, room_width - _margin)
+	var _y1 = irandom_range(_margin, room_height - _margin)
+	instance_create_layer(_x1, _y1, "Instances", obj_eternal_hydra)
+	
+	//spawn second
+	var _x2, _y2
+	do {
+		_x2 = irandom_range(_margin, room_width - _margin)
+		_y2 = irandom_range(_margin, room_height - _margin) 
+	} until (point_distance(_x1, _y1, _x2, _y2) > 200)
+	
+	instance_create_layer(_x2, _y2, "Instances", obj_eternal_hydra)
+}
+	
+>>>>>>> Stashed changes

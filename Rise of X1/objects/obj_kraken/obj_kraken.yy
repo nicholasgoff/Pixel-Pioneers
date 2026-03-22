@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_kraken_controller",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_kraken",
+  "eventList":[],
   "managed":true,
-  "name":"obj_kraken_controller",
+  "name":"obj_kraken",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_kraken",
+    "path":"sprites/spr_kraken/spr_kraken.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
