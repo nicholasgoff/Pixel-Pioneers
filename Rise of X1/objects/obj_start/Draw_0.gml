@@ -32,7 +32,7 @@ if (menu == "instructions") {
     draw_text(cx - 400, cy, "- Move with WASD");
 	draw_text(cx - 400, cy + 80, "- Shoot with left click & melee with right click");
     draw_text(cx - 400, cy + 160, "- Kill enemies to get DNA and evolve");
-	draw_text(cx - 400, cy + 240, "- Clear all enemies to progress");
+	draw_text(cx - 400, cy + 240, "- Deafeat the henchman to prepare for the Kraken");
 	draw_text(cx - 400, cy + 320, "- Defeat the kraken to win");
 	draw_set_halign(fa_center);
 	
