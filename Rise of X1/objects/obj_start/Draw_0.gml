@@ -23,6 +23,10 @@ if (menu == "main") {
         draw_text(cx, cy + 100, "> Credits <");
     } else draw_text(cx, cy + 100, "Credits");
 	
+	if (point_in_rectangle(mouse_x, mouse_y, cx - 200, cy + 140, cx + 200, cy + 200)) {
+	    draw_text(cx, cy + 180, "> Quit <");
+	} else draw_text(cx, cy + 180, "Quit");
+	
 }
 
 // INSTRUCTIONS
@@ -31,7 +35,7 @@ if (menu == "instructions") {
 	draw_set_halign(fa_left);
     draw_text(cx - 400, cy, "- Move with WASD");
 	draw_text(cx - 400, cy + 80, "- Shoot with left click & melee with right click");
-    draw_text(cx - 400, cy + 160, "- Kill enemies to get DNA and evolve");
+    draw_text(cx - 400, cy + 160, "- Kill enemies to get DNA and evolve more abilities");
 	draw_text(cx - 400, cy + 240, "- Deafeat the henchman to prepare for the Kraken");
 	draw_text(cx - 400, cy + 320, "- Defeat the kraken to win");
 	draw_set_halign(fa_center);

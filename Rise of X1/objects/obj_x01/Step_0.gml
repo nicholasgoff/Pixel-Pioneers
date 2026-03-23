@@ -124,6 +124,7 @@ if (hp < max_hp)
 
 // Death logic
 if (hp <= 0) {
+	audio_play_sound(snd_player_death, 10, false);
 	obj_game_manager.player_lives --;
 	if (obj_game_manager.player_lives < 0) {
 		room_goto(rm_lose);

@@ -2,6 +2,7 @@
 
 if (obj_x01.can_be_hit && !obj_x01.god_mode_is_active) {
     obj_x01.hp -= 40;
+	audio_play_sound(snd_dmg_player, 10, false);
     
     // Massive Knockback
     var _dir = point_direction(x, y, obj_x01.x, obj_x01.y);

@@ -21,6 +21,11 @@ if (menu == "main") {
     if (point_in_rectangle(mx, my, cx - 200, cy + 60, cx + 200, cy + 120)) {
         menu = "credits";
     }
+	
+	// Quit
+	if (point_in_rectangle(mx, my, cx - 200, cy + 140, cx + 200, cy + 200)) {
+	    game_end();
+}
 }
 
 // BACK BUTTON

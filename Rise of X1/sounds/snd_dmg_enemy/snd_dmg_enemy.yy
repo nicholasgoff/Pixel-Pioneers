@@ -1,18 +1,18 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_kraken_noise",
+  "%Name":"snd_dmg_enemy",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
   "channelFormat":0,
-  "compression":0,
+  "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":7.2211566,
+  "duration":0.31777778,
   "exportDir":"",
-  "name":"snd_kraken_noise",
+  "name":"snd_dmg_enemy",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_kraken_noise.wav",
-  "volume":0.5,
+  "soundFile":"snd_dmg_enemy.mp3",
+  "volume":0.15,
 }
