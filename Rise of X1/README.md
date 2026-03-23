@@ -86,6 +86,7 @@ The core gameplay loop consists of:
 - **F2** – Unlock all abilities
 - **F3** – Clear all enemies in room
 - **F4** – Reset player position
+- **F5** – Reset ability cooldowns
 
 - **CTRL + 1** - Add Mantis DNA
 - **CTRL + 2** - Add Dart DNA
