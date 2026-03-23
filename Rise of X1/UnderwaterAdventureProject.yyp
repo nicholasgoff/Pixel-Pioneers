@@ -83,6 +83,7 @@
     {"id":{"name":"snd_shot_1","path":"sounds/snd_shot_1/snd_shot_1.yy",},},
     {"id":{"name":"snd_shot_2","path":"sounds/snd_shot_2/snd_shot_2.yy",},},
     {"id":{"name":"snd_shot_3","path":"sounds/snd_shot_3/snd_shot_3.yy",},},
+    {"id":{"name":"snd_main_background","path":"sounds/snd_main_background/snd_main_background.yy",},},
     {"id":{"name":"spr_abyssal_dart","path":"sprites/spr_abyssal_dart/spr_abyssal_dart.yy",},},
     {"id":{"name":"spr_big_bomb","path":"sprites/spr_big_bomb/spr_big_bomb.yy",},},
     {"id":{"name":"spr_dead_x01","path":"sprites/spr_dead_x01/spr_dead_x01.yy",},},

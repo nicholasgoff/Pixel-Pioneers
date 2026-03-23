@@ -3,8 +3,8 @@
   "%Name":"spr_trench_cracker",
   "bboxMode":0,
   "bbox_bottom":48,
-  "bbox_left":4,
-  "bbox_right":94,
+  "bbox_left":5,
+  "bbox_right":95,
   "bbox_top":6,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"59cfaf9b-a176-479d-82a9-5eb385a8f486","name":"59cfaf9b-a176-479d-82a9-5eb385a8f486","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ab7dd3c6-aef1-480e-b27d-17df290c8a89","name":"ab7dd3c6-aef1-480e-b27d-17df290c8a89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":55,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7de33e82-57a0-42f5-bc4c-e9772e2aaad0","blendMode":0,"displayName":"default","isLocked":false,"name":"7de33e82-57a0-42f5-bc4c-e9772e2aaad0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"99c8c7cd-9d66-4412-9a06-7dec7a575b5d","blendMode":0,"displayName":"default","isLocked":false,"name":"99c8c7cd-9d66-4412-9a06-7dec7a575b5d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_trench_cracker",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"59cfaf9b-a176-479d-82a9-5eb385a8f486","path":"sprites/spr_trench_cracker/spr_trench_cracker.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5b757712-f824-4876-b264-17be3162daf6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ab7dd3c6-aef1-480e-b27d-17df290c8a89","path":"sprites/spr_trench_cracker/spr_trench_cracker.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"01087f6c-7f36-4e9e-a402-cc2ec75bb3d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
