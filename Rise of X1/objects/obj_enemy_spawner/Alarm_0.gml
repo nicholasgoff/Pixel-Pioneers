@@ -1,6 +1,6 @@
 if (boss_spawned) exit;
 
-if (instance_number(obj_enemy_parent) > 20) {
+if (instance_number(obj_enemy_parent) > 10){
     alarm[0] = spawn_rate; // Wait and try again
     exit;
 }

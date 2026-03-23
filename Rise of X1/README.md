@@ -5,7 +5,7 @@
 *Rise of X1* is a top-down, progression-based survival game where the player controls an evolving organism navigating a hostile underwater environment. The player must defeat enemies, collect DNA fragments, and survive increasingly dangerous encounters while unlocking new abilities.
 
 The core gameplay loop consists of:
-- Moving through rooms
+- Waves of enemies 
 - Fighting enemies using ranged and melee attacks
 - Collecting DNA dropped from enemies
 - Avoiding too much damage from enemies
@@ -20,6 +20,8 @@ The core gameplay loop consists of:
 - **Left Click** – Shoot projectile
 - **Right Click** – Melee attack
 - **Shift** – Dash (if unlocked)
+- **E** - Burst attacked (if unlocked)
+
 
 ---
 
@@ -36,10 +38,12 @@ The core gameplay loop consists of:
 - **Melee Combat:** Short-range attack with cooldown
 - **Enemy Types:**
   - Basic melee enemies
+  - Basic ranged enemies
   - Dash enemies
   - Damage-over-time (parasite) enemies
 - **DNA Drops:** Enemies drop DNA used for progression/upgrades
 - **Health System:** Player takes damage from enemies and dies at 0 HP
+- **Extra Life:** Passive enemie will randomly appear and grants an extra life if collected
 
 ---
 
