@@ -18,5 +18,6 @@ projectile_speed = 6;
 
 flash = 0
 
-audio_play_sound(snd_kraken_noise, 1, true)
+kraken_sound = audio_play_sound(snd_kraken_noise, 1, true)
+
 
