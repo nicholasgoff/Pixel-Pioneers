@@ -7,6 +7,7 @@ obj_x01.v_speed = lengthdir_y(10, _dir);
 
 if (obj_x01.can_be_hit && !obj_x01.god_mode_is_active) {
     obj_x01.hp -= 10;
+	audio_play_sound(snd_dmg_player, 10, false);
     
     obj_x01.can_be_hit = false;
     obj_x01.alarm[3] = 45; 
@@ -14,7 +15,6 @@ if (obj_x01.can_be_hit && !obj_x01.god_mode_is_active) {
     state = "retreat";
     speed = 6;
     
-    // Visual: Screen shake or blood/ink particles here
-		obj_x01.image_blend = c_red;
-		obj_x01.alarm[2] = 5;
+	obj_x01.image_blend = c_red;
+	obj_x01.alarm[2] = 5;
 }

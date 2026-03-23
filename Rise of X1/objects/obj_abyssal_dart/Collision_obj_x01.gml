@@ -14,6 +14,7 @@ if (state == "dashing") {
         }
 	if (!obj_x01.god_mode_is_active){
         obj_x01.hp -= dmg;
+		audio_play_sound(snd_dmg_player, 10, false);
 	}
         
 	    // Safety for player
