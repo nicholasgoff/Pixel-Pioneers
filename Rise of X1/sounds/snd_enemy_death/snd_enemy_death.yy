@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_kraken_noise",
+  "%Name":"snd_enemy_death",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":7.2211566,
+  "duration":1.837279,
   "exportDir":"",
-  "name":"snd_kraken_noise",
+  "name":"snd_enemy_death",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_kraken_noise.wav",
-  "volume":0.5,
+  "soundFile":"snd_enemy_death.wav",
+  "volume":0.4,
 }

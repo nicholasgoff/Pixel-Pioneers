@@ -28,7 +28,7 @@ The core gameplay loop consists of:
 ### Objective
 - Defeat enemies to collect DNA
 - Use DNA to evolve new abilities
-- Progress through the levels
+- Survive the waves
 - Defeat the Kraken boss
 
 ---
@@ -76,7 +76,7 @@ The core gameplay loop consists of:
 6. **Progression and End Game**
    - If player HP reaches 0 and player has no extra lives, the game ends
    - Defeating all enemies in a level progresses the player to the next level
-   - Defeat the Kraken boss in the last level to win the game
+   - Defeat the Kraken boss in the last wave to win the game
 
 ---
 
@@ -86,6 +86,7 @@ The core gameplay loop consists of:
 - **F2** – Unlock all abilities
 - **F3** – Clear all enemies in room
 - **F4** – Reset player position
+- **F5** – Reset ability cooldowns
 
 - **CTRL + 1** - Add Mantis DNA
 - **CTRL + 2** - Add Dart DNA
