@@ -36,16 +36,6 @@ else
     image_angle = aim_dir;
 }
 
-
-
-// 4. CHECK FOR NEXT LEVEL
-/*
-if (instance_number(obj_enemy_parent) <= 0) {
-    if (room_exists(room_next(room))) room_goto_next();
-    else room_goto(rm_win);
-}
-*/ //uncheck when closer to finishing game
-
 // --- RANGED ATTACK (Left Click) ---
 if (mouse_check_button(mb_left) && can_attack) {
     var _bullet = instance_create_layer(x, y, "Instances", obj_projectile);
