@@ -1,7 +1,7 @@
 // If god mode is on negate damage
 if (obj_x01.god_mode_is_active) exit 
 
-obj_x01.hp -= 5;
+obj_x01.hp -= damage;
 
 instance_destroy();
 

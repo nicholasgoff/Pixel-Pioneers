@@ -18,6 +18,7 @@ if (instance_exists(obj_x01)) {
         var _orb = instance_create_layer(x, y, "Instances", obj_ink_orb);
         _orb.direction = point_direction(x, y, obj_x01.x, obj_x01.y);
         _orb.speed = 4;
+		_orb.damage = 5
         
         can_shoot = false;
         alarm[0] = 120; // 2 seconds between shots
