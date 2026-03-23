@@ -15,3 +15,7 @@ attack_cooldown = 90;
 projectile_speed = 6;
 
 flash = 0
+
+kraken_sound = audio_play_sound(snd_kraken_noise, 1, true)
+
+
