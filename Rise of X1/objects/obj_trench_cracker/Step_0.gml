@@ -3,6 +3,7 @@ event_inherited();
 if (instance_exists(obj_x01)) {
     // Calculate the direction to the player
     var _target_dir = point_direction(x, y, obj_x01.x, obj_x01.y);
+	_target_dir += 180;
     
     // Find the shortest way to turn toward that direction
     var _diff = angle_difference(_target_dir, image_angle);
@@ -19,5 +20,4 @@ if (instance_exists(obj_x01)) {
 if (distance_to_object(obj_x01) < 50) {
     speed = 0;
 	
-    // Possible crushing animation
 }

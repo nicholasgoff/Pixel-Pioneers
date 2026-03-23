@@ -1,4 +1,5 @@
 event_inherited(); // Gets HP from parent
-hp = 10;           // Much tougher than the Dart or Mote
+image_xscale = 1;
+hp = 10;
 armor_active = true;
 dna_type = "crab"
