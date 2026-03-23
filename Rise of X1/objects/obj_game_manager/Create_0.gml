@@ -2,6 +2,10 @@ display_set_gui_size(1366, 768);
 camera_width = 1100;
 camera_height = 680;
 
+if (!audio_is_playing(snd_main_background)) {
+    audio_play_sound(snd_main_background, 10, true);
+}
+
 // DNA Progress
 dna_dart = 0;
 dna_crab = 0;

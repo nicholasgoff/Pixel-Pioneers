@@ -78,6 +78,7 @@
     {"id":{"name":"Heal","path":"scripts/Heal/Heal.yy",},},
     {"id":{"name":"takeDamage","path":"scripts/takeDamage/takeDamage.yy",},},
     {"id":{"name":"shd_underwater","path":"shaders/shd_underwater/shd_underwater.yy",},},
+    {"id":{"name":"snd_main_background","path":"sounds/snd_main_background/snd_main_background.yy",},},
     {"id":{"name":"spr_abyssal_dart","path":"sprites/spr_abyssal_dart/spr_abyssal_dart.yy",},},
     {"id":{"name":"spr_big_bomb","path":"sprites/spr_big_bomb/spr_big_bomb.yy",},},
     {"id":{"name":"spr_dead_x01","path":"sprites/spr_dead_x01/spr_dead_x01.yy",},},
