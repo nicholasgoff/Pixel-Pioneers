@@ -82,10 +82,10 @@ The core gameplay loop consists of:
 
 ## Cheat Codes (For Testing / Presentation)
 
-- **F1** – Toggle God Mode (infinite HP)
+- **F1** – Unlock Cheat Codes
 - **F2** – Unlock all abilities
 - **F3** – Clear all enemies in room
-- **F4** – Reset player position
+- **F4** – Toggle God Mode (infinite HP)
 - **F5** – Reset ability cooldowns
 
 - **CTRL + 1** - Add Mantis DNA
