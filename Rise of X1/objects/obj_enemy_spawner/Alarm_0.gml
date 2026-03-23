@@ -8,7 +8,7 @@ if (instance_number(obj_enemy_parent) > 10){
 if (game_timer > 0) {
     var _side = irandom(3);
     var _spawn_x, _spawn_y;
-    var _margin = 64;
+    var _margin = 80;
 
     switch(_side) {
         case 0: _spawn_x = irandom_range(_margin, room_width - _margin); _spawn_y = _margin; break; //top

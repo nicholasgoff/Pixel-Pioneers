@@ -43,7 +43,7 @@ The core gameplay loop consists of:
   - Damage-over-time (parasite) enemies
 - **DNA Drops:** Enemies drop DNA used for progression/upgrades
 - **Health System:** Player takes damage from enemies and dies at 0 HP
-- **Extra Life:** Passive enemie will randomly appear and grants an extra life if collected
+- **Extra Life:** Passive enemy that will randomly appear and grants an extra life if collected
 
 ---
 
