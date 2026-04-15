@@ -1,2 +1,0 @@
-audio_play_sound(snd_shot_2, 1, false)
-damage = 0
